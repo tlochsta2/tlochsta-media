@@ -70,6 +70,10 @@
         .bd-mode-toggle .dropdown-menu .active .bi {
             display: block !important;
         }
+                .cover-container {
+            max-width: 50em;
+        }
+
 
         /*
          * Globals
@@ -95,9 +99,7 @@
 
         }
 
-        .cover-container {
-            max-width: 
-        }
+
 
 
         /*
@@ -157,9 +159,8 @@
 <body class="d-flex h-100 text-center text-bg-dark">
 
 
-    <div class="cover-container d-flex w-100 h-100  p-3 mx-auto flex-column">
-
-        <header class="">
+    <div class="d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <center><header class=" cover-container mb-auto">
             <div>
                 <h3 class="float-md-start mb-0">tlochsta media</h3>
                 <nav class="nav nav-masthead justify-content-center float-md-end">
@@ -168,34 +169,83 @@
                     <a class="nav-link fw-bold py-1 px-0" href="#">Contact</a>
                 </nav>
             </div>
-        </header>
-        
+        </header></center>
 
-<style type="text/css">
+<main class="px-3">
+    <style>
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 
-        </style>
-        <div id="content" class="p-3">
-            <iframe style="height: 100vh;width:100%;" id="iframe" width="100%" height="100%" frameborder="0" src=""></iframe>
-        </div>
+        .card {
+            margin: 10px;
+            width: 200px;
+            height: 200px; /* Set a fixed height for square cropping */
+            overflow: hidden;
+            border-radius: 10px; /* Optional: add rounded corners */
+            transition: transform 0.3s;
+        }
 
+        .card-img-container {
+            overflow: hidden;
+            height: 100%;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            object-fit: cover; /* Make the image cover the entire container */
+        }
+                .game-iframe {
+            width: 80vw; /* 80% of viewport width */
+            height: 80vh; /* 80% of viewport height */
+            border: none;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Drop shadow */
+            border-radius: 15px; /* Rounded corners */
+            margin: auto; /* Center the iframe */
+            display: block;
+        }
+        .fullscreen-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+        }
+
+        /* Styles for the mute button */
+        .mute-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+        }
+    </style>
+    <iframe class="game-iframe" id="gameFrame" allowfullscreen></iframe>
+</main>
 <script>
-  const urlParams = new URLSearchParams(window.location.href);
-  const id = urlParams.get('id');
-  var frame = document.getElementById("iframe");
-  const games = {
-    1: "https://html-classic.itch.zone/html/7550065/itch/index.html",
-    2: "https://supersmashflash.pages.dev/",
-    3: "https://tm-run3-beta.pages.dev/",
-    4: "https://run-2.pages.dev/",
-    5: "https://backrooms-ad8.pages.dev/",
-    6: "https://html-classic.itch.zone/html/5658186/index.html",
-    7: "https://slope1.glitch.me/",
-    8: "https://astronetclient.pages.dev/compiled/web",
-    9: "https://eggycar.pages.dev/",
-    10: "https://drift-hunters.pages.dev/",
-  }
-    iframe.src = games[id];
+    const gameData = {
+        1: "https://html-classic.itch.zone/html/7550065/itch/index.html",
+        2: "https://supersmashflash.pages.dev/",
+        3: "https://tm-run3-beta.pages.dev/",
+        4: "https://run-2.pages.dev/",
+        5: "https://backrooms-ad8.pages.dev/",
+        6: "https://html-classic.itch.zone/html/5658186/index.html",
+        7: "https://slope1.glitch.me/",
+        8: "https://astronetclient.pages.dev/compiled/web",
+        9: "https://eggycar.pages.dev/",
+        10: "https://drift-hunters.pages.dev/",
+    };
 
+    const urlParams = new URLSearchParams(window.location.search);
+    const gameId = urlParams.get('id');
+
+    if (gameId && gameData[gameId]) {
+        document.getElementById('gameFrame').src = gameData[gameId];
+    } else {
+        history.go(-1);
+    }
 </script>
 
         <footer class="mt-auto text-white-50">
@@ -203,7 +253,7 @@
                     href="mailto:admin@tlochsta.xyz?subject=legal%20stuff&body=Type%3A%20Legal%0D%0ASite%3A%20tlochsta%20media%20static%20edition%20v1%0D%0A%2F%2F%20Please%20type%20below%20this%20line%20%2F%2F "
                     class="text-white">legal</a></p>
         </footer>
-        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
