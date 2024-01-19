@@ -229,17 +229,16 @@
 </div>
 </main>
 <script>
-  let swf;
     const fileInput = document.querySelector('input');
 
     fileInput.addEventListener('change', (e) => {
         const file = e.target.files[0];
         const reader = new FileReader();
         reader.onloadend = () => {
-            swf = reader.result;
+            document.getElementById("fplayer").src = reader.result;
             console.log(reader.result);
         };
-        document.getElementById("fplayer").src = swf;
+        
         
     });
 </script>
