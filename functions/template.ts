@@ -148,7 +148,7 @@ margin-bottom: 10px;
     
     <div class="form-floating">
 <input type="hidden" name="redirect" style="display:none;" value="${redirectPath}">
-      <input type="password" class="form-control" autocomplete="current-password" autofocus="" placeholder="Password" required="" id="password">
+      <input type="password" name="password" class="form-control" autocomplete="current-password" autofocus="" placeholder="Password" required="" id="password">
       <label for="password">Site Password</label>
     </div>
 
