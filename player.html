@@ -1,3 +1,4 @@
+<!--
 <!doctype html>
 <html lang="en" class="h-100" data-bs-theme="dark">
 
@@ -278,6 +279,98 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="en" class="h-full dark:bg-gray-900 dark:text-white">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tlochsta media</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-top: 56.25%; /* 16:9 aspect ratio */
+        }
+
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white">
+    <header class="bg-gray-800 p-4">
+        <nav class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold">tlochsta media</div>
+            <ul class="flex space-x-4">
+                <li><a href="#" class="hover:text-gray-400">Home</a></li>
+                <li><a href="#" class="hover:text-gray-400">About</a></li>
+                <li><a href="#" class="hover:text-gray-400">Services</a></li>
+                <li><a href="#" class="hover:text-gray-400">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container mx-auto py-8 px-8">
+        <div class="iframe-container">
+            <iframe src="" id="gameFrame" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <footer class="bg-gray-800 text-center py-4">
+        <p>&copy; 2024 tlochsta - All Rights Reserved</p>
+    </footer>
+
+<script>
+    const gameData = {
+        1: "https://html-classic.itch.zone/html/7550065/itch/index.html",
+        2: "https://supersmashflash.pages.dev/",
+        3: "https://tm-run3-beta.pages.dev/",
+        4: "https://run-2.pages.dev/",
+        5: "https://backrooms-ad8.pages.dev/",
+        6: "https://html-classic.itch.zone/html/5658186/index.html",
+        7: "https://slope1.glitch.me/",
+        8: "https://astronetclient.pages.dev/compiled/web",
+        9: "https://eggycar.pages.dev/",
+        10: "https://drift-hunters.pages.dev/",
+        11: "https://html-classic.itch.zone/html/8990635/index.html",
+        12: "https://tm-geometry-dash.pages.dev/original",
+        13: "https://tm-geometry-dash.pages.dev/subzero",
+        14: "https://tm-geometry-dash.pages.dev/meltdown",
+        15: "https://tm-geometry-dash.pages.dev/world",
+        16: "https://html-classic.itch.zone/html/6205826/index.html",
+        17: "https://html-classic.itch.zone/html/9093234/index.html",
+        18: "https://tm-flappybird.pages.dev/"
+    };
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const gameId = urlParams.get('id');
+
+    if (gameId && gameData[gameId]) {
+        document.getElementById('gameFrame').src = gameData[gameId];
+    } else {
+        history.go(-1);
+    }
+</script>
 
 </body>
 
