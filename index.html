@@ -4,13 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tlochsta media</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Dark Theme Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-        body {
-        	font-family: 'Roboto', sans-serif;
-        }
         .card {
             transition: transform 0.3s ease;
         }
@@ -25,7 +21,7 @@
 <body class="bg-gray-900 text-white">
     <header class="bg-gray-800 p-4">
         <nav class="container mx-auto flex justify-between items-center">
-            <div class="text-2xl font-bold">tlochsta media</div>
+            <div class="text-2xl font-bold">Your Logo</div>
             <ul class="flex space-x-4">
                 <li><a href="#" class="hover:text-gray-400">Home</a></li>
                 <li><a href="#" class="hover:text-gray-400">About</a></li>
@@ -35,203 +31,167 @@
         </nav>
     </header>
 
-     <div class="container mx-auto py-8 px-8">
+    <div class="container mx-auto py-8 px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Card 1 -->
             <a href="/player?id=1" class="card-link">
                 <div class="card">
-                    <div class="card-img-container">
-                        <img src="/img/gourdlets.png" alt="Gourdlets">
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">Gourdlets</p>
+                    <img src="/img/gourdlets.png" alt="Gourdlets" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold">Gourdlets</h2>
                     </div>
                 </div>
             </a>
             <!-- Card 2 -->
             <a href="/player?id=2" class="card-link">
                 <div class="card">
-                    <div class="card-img-container">
-                        <img src="/img/supersmashflash.jpg" alt="Super Smash Flash">
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">Super Smash Flash</p>
+                    <img src="/img/supersmashflash.jpg" alt="Super Smash Flash" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold">Super Smash Flash</h2>
                     </div>
                 </div>
             </a>
             <!-- Card 3 -->
             <a href="/player?id=3" class="card-link">
                 <div class="card">
-                    <div class="card-img-container">
-                        <img src="/img/run3.jpg" alt="Run 3">
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">Run 3</p>
+                    <img src="/img/run3.jpg" alt="Run 3" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold">Run 3</h2>
                     </div>
                 </div>
             </a>
             <!-- Card 4 -->
             <a href="/player?id=4" class="card-link">
                 <div class="card">
-                    <div class="card-img-container">
-                        <img src="/img/run2.jpg" alt="Run 2">
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">Run 2</p>
+                    <img src="/img/run2.jpg" alt="Run 2" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold">Run 2</h2>
                     </div>
                 </div>
             </a>
             <!-- Card 5 -->
             <a href="/player?id=5" class="card-link">
                 <div class="card">
-                    <div class="card-img-container">
-                        <img src="/img/backrooms.jpg" alt="Backrooms">
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">Backrooms</p>
+                    <img src="/img/backrooms.jpg" alt="Backrooms" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold">Backrooms</h2>
                     </div>
                 </div>
             </a>
             <!-- Card 6 -->
             <a href="/player?id=6" class="card-link">
                 <div class="card">
-                    <div class="card-img-container">
-                        <img src="/img/hyperspace-racers-3.jpg" alt="Hyperspace Racers 3">
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">Hyperspace Racers 3</p>
+                    <img src="/img/hyperspace-racers-3.jpg" alt="Hyperspace Racers 3" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold">Hyperspace Racers 3</h2>
                     </div>
                 </div>
             </a>
             <!-- Card 7 -->
             <a href="/player?id=7" class="card-link">
                 <div class="card">
-                    <div class="card-img-container">
-                        <img src="/img/slope.jpg" alt="Slope">
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">Slope</p>
+                    <img src="/img/slope.jpg" alt="Slope" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold">Slope</h2>
                     </div>
                 </div>
             </a>
             <!-- Card 8 -->
             <a href="/player?id=8" class="card-link">
                 <div class="card">
-                    <div class="card-img-container">
-                        <img src="/img/minecraft.jpg" alt="Minecraft v1.5">
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">Minecraft v1.5</p>
+                    <img src="/img/minecraft.jpg" alt="Minecraft v1.5" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold">Minecraft v1.5</h2>
                     </div>
                 </div>
             </a>
             <!-- Card 9 -->
             <a href="/player?id=9" class="card-link">
                 <div class="card">
-                    <div class="card-img-container">
-                        <img src="/img/eggy-car.jpg" alt="Eggy Car">
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">Eggy Car</p>
+                    <img src="/img/eggy-car.jpg" alt="Eggy Car" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold">Eggy Car</h2>
                     </div>
                 </div>
             </a>
             <!-- Card 10 -->
             <a href="/player?id=10" class="card-link">
                 <div class="card">
-                    <div class="card-img-container">
-                        <img src="/img/drift-hunters.jpg" alt="Drift Hunters">
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">Drift Hunters</p>
+                    <img src="/img/drift-hunters.jpg" alt="Drift Hunters" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold">Drift Hunters</h2>
                     </div>
                 </div>
             </a>
             <!-- Card 11 -->
             <a href="/player?id=11" class="card-link">
                 <div class="card">
-                    <div class="card-img-container">
-                        <img src="/img/polytrack.jpg" alt="PolyTrack">
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">PolyTrack</p>
+                    <img src="/img/polytrack.jpg" alt="PolyTrack" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold">PolyTrack</h2>
                     </div>
                 </div>
             </a>
             <!-- Card 12 -->
             <a href="/player?id=12" class="card-link">
                 <div class="card">
-                    <div class="card-img-container">
-                        <img src="/img/original.png" alt="Geometry Dash">
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">Geometry Dash</p>
+                    <img src="/img/original.png" alt="Geometry Dash" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold">Geometry Dash</h2>
                     </div>
                 </div>
             </a>
             <!-- Card 13 -->
             <a href="/player?id=13" class="card-link">
                 <div class="card">
-                    <div class="card-img-container">
-                        <img src="/img/subzero.png" alt="Geometry Dash Subzero">
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">Geometry Dash Subzero</p>
+                    <img src="/img/subzero.png" alt="Geometry Dash Subzero" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold">Geometry Dash Subzero</h2>
                     </div>
                 </div>
             </a>
             <!-- Card 14 -->
             <a href="/player?id=14" class="card-link">
                 <div class="card">
-                    <div class="card-img-container">
-                        <img src="/img/meltdown.png" alt="Geometry Dash Meltdown">
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">Geometry Dash Meltdown</p>
+                    <img src="/img/meltdown.png" alt="Geometry Dash Meltdown" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold">Geometry Dash Meltdown</h2>
                     </div>
                 </div>
             </a>
             <!-- Card 15 -->
             <a href="/player?id=15" class="card-link">
                 <div class="card">
-                    <div class="card-img-container">
-                        <img src="/img/world.png" alt="Geometry Dash World">
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">Geometry Dash World</p>
+                    <img src="/img/world.png" alt="Geometry Dash World" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold">Geometry Dash World</h2>
                     </div>
                 </div>
             </a>
             <!-- Card 16 -->
             <a href="/player?id=16" class="card-link">
                 <div class="card">
-                    <div class="card-img-container">
-                        <img src="/img/pako_highway.png" alt="Pako Highway">
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">Pako Highway</p>
+                    <img src="/img/pako_highway.png" alt="Pako Highway" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold">Pako Highway</h2>
                     </div>
                 </div>
             </a>
             <!-- Card 17 -->
             <a href="/player?id=17" class="card-link">
                 <div class="card">
-                    <div class="card-img-container">
-                        <img src="/img/island_of_mine.png" alt="Island of Mine">
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">Island of Mine</p>
+                    <img src="/img/island_of_mine.png" alt="Island of Mine" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold">Island of Mine</h2>
                     </div>
                 </div>
             </a>
             <!-- Card 18 -->
             <a href="/player?id=18" class="card-link">
                 <div class="card">
-                    <div class="card-img-container">
-                        <img src="/img/Flappy_Bird_icon.png" alt="Flappy Bird">
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">Flappy Bird</p>
+                    <img src="/img/Flappy_Bird_icon.png" alt="Flappy Bird" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold">Flappy Bird</h2>
                     </div>
                 </div>
             </a>
@@ -239,7 +199,7 @@
     </div>
 
     <footer class="bg-gray-800 text-center py-4">
-        <p>&copy; 2024 tlochsta media<br><span class="text-xs">Any DMCA on this website is fraudulent. Please contact us for DCMA web-game takedown requests.</span></p>
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
     </footer>
 </body>
 
