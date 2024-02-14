@@ -367,7 +367,7 @@ function requestFullScreen(element) {
 
 function makeFullScreen() {
     document.getElementsByTagName("iframe")[0].className = "fullScreen";
-    var elem = document.body;
+    var elem = document.getElementsByTagName("iframe")[0];
     requestFullScreen(elem);
 }
     const gameData = {
